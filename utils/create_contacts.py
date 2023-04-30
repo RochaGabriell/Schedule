@@ -27,7 +27,7 @@ if __name__ == '__main__':
     fake = faker.Faker('pt_BR')
     categories = ['Amigos', 'Família', 'Conhecidos']
 
-    django_categories = [Category(descricao=name) for name in categories]
+    django_categories = [Category(description=name) for name in categories]
 
     for category in django_categories:
         category.save()
