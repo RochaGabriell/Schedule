@@ -1,5 +1,3 @@
-from typing import Any, Dict
-from django.db import models
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.core.paginator import Paginator
