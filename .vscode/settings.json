@@ -2,7 +2,7 @@
     // workbench
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Omni",
+    "workbench.colorTheme": "Monokai",
     "liveServer.settings.port": 5501,
     // editor
     "python.formatting.provider": "yapf",
