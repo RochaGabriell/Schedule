@@ -1,0 +1,16 @@
+<header class="header">
+    <h1 class="header-heading">
+        <a href="{% url 'contact:list_contact' %}" class="header-link">Agenda</a>
+    </h1>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="munu-item"><a href="" class="menu-link">Links</a></li>
+            <li class="munu-item"><a href="" class="menu-link">Links</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <form action="{% url 'contact:search' %}" method="get">
+            <input type="text" class="search-input" placeholder="Search" id="search" name="q" value="{{ request.GET.q.strip }}">
+        </form>
+    </div>
+</header>
