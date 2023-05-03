@@ -73,3 +73,13 @@ class ContactUpdateView(UpdateView):
         context['form_action'] = reverse('contact:update_contact', args=(self.object.pk, ))
         return context
 """
+
+def ContactDeleteView(request, pk):
+    contact = get_object_or_404(Contact, pk=pk, show=True)
+
+    if request.method == 'POST':
+        contact.show = False
+        contact.save()
+        return redirect('contact:list_contact')
+
+    return render(request, 'contact/index.html')
